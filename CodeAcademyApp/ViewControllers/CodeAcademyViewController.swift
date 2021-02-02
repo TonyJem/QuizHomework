@@ -33,7 +33,7 @@ class CodeAcademyViewController: UIViewController {
     }
 
     private var AddQuestionViewController: UIViewController {
-        QuizHomeStoryboard.instantiateViewController(identifier: "AddQuestionViewController")
+        SettingsStoryboard.instantiateViewController(identifier: "AddQuestionViewController")
     }
     
     private var PointsRulesViewController: UIViewController {

@@ -1,13 +1,6 @@
-//
-//  QuizSettingsViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2021-01-25.
-//
-
 import UIKit
 
-final class QuizSettingsViewController: UIViewController {
+final class QuizSettingsViewController: CodeAcademyViewController {
 
     private let MinimumQuestions: Double = 1
     
@@ -20,7 +13,8 @@ final class QuizSettingsViewController: UIViewController {
     @IBOutlet weak var correctAnswerPointsTextField: ClearableTextField!
     @IBOutlet weak var wrongAnswerPoints: ClearableTextField!
     @IBOutlet weak var penaltyPointsTextField: ClearableTextField!
-
+    @IBOutlet weak var addQuestionsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +32,10 @@ final class QuizSettingsViewController: UIViewController {
     
     @IBAction func timmerSettingSliderValueChanged(_ sender: UISlider) {
         timerSettingsLabel.text = "\(Int(sender.value))"
+    }
+    
+    @IBAction func addQuestionsPressed(_ sender: UIButton) {
+        proceedToAddQuestionView()
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
@@ -59,6 +57,10 @@ extension QuizSettingsViewController {
         timerSlider.minimumValue = 5
         timerSlider.maximumValue = 60
         timerSlider.value = timerSlider.minimumValue
+        
+        if let loggedInAccount = AccountManager.loggedInAccount {
+            addQuestionsButton.isHidden = loggedInAccount.accountType == .user
+        }
     }
     
 }
