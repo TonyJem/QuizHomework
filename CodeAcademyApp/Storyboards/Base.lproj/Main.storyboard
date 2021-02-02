@@ -68,34 +68,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1AC-Tm-1d1">
-                                <rect key="frame" x="119" y="289" width="176.5" height="230.5"/>
+                                <rect key="frame" x="106" y="289" width="202" height="230.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter login information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzT-gn-2ri">
-                                        <rect key="frame" x="0.0" y="0.0" width="176.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="clj-2F-6D0" customClass="ClearableTextField" customModule="CodeAcademyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40.5" width="176.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="202" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="202" id="SK0-pk-SxT"/>
                                             <constraint firstAttribute="height" constant="50" id="noK-yM-QsG"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3HY-q5-y4C" customClass="ClearableTextField" customModule="CodeAcademyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="110.5" width="176.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="202" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="width" constant="202" id="6Uv-Xk-6nG"/>
                                             <constraint firstAttribute="height" constant="50" id="Toc-70-Nwu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZC-Rr-yRt">
-                                        <rect key="frame" x="0.0" y="180.5" width="176.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="202" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Jj2-Du-o0u"/>
@@ -135,34 +137,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vup-S8-gXo">
-                                <rect key="frame" x="106.5" y="289" width="201.5" height="230.5"/>
+                                <rect key="frame" x="106" y="289" width="202" height="230.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter account information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY2-Xv-1mV">
-                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqr-5q-4kH" customClass="ClearableTextField" customModule="CodeAcademyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40.5" width="201.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="202" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="pNC-aD-93Z"/>
+                                            <constraint firstAttribute="width" constant="202" id="yF8-rB-xlP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" textContentType="username"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M8z-sy-Jfs" customClass="ClearableTextField" customModule="CodeAcademyApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="110.5" width="201.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="110.5" width="202" height="50"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="0So-ZH-gvi"/>
+                                            <constraint firstAttribute="width" constant="202" id="4co-rk-2fx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGb-Zo-B9O">
-                                        <rect key="frame" x="0.0" y="180.5" width="201.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="202" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="1N2-pQ-bJC"/>
