@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-gW-CkD">
-                                <rect key="frame" x="20" y="394" width="374" height="330"/>
+                                <rect key="frame" x="20" y="394" width="374" height="260"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-Cp-7la">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -96,19 +96,6 @@
                                             <action selector="logoutButtonPressed:" destination="nGW-AO-V5f" eventType="touchUpInside" id="7BK-9G-P7R"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKI-8H-swM">
-                                        <rect key="frame" x="0.0" y="280" width="374" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="C1U-hk-N0Z"/>
-                                        </constraints>
-                                        <state key="normal" title="Add questions">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addQuestionsPressed:" destination="nGW-AO-V5f" eventType="touchUpInside" id="hWw-Wb-bCa"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -130,7 +117,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addQuestionsButton" destination="cKI-8H-swM" id="nba-CJ-Ma3"/>
                         <outlet property="pointsForCorrectLabel" destination="F89-C0-dPu" id="PzI-HC-5Ks"/>
                         <outlet property="pointsMinusWhenWrongLabel" destination="ySA-NI-eWf" id="rmd-c2-1DQ"/>
                         <outlet property="pointsPenaltyWhenMoreTimeLabel" destination="M7R-nW-Igj" id="0jD-VB-kIh"/>

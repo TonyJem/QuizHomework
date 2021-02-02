@@ -1,16 +1,8 @@
-//
-//  QuizHomeViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-28.
-//
-
 import UIKit
 
 class QuizHomeViewController: CodeAcademyViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var addQuestionsButton: UIButton!
     @IBOutlet weak var pointsForCorrectLabel: UILabel!
     @IBOutlet weak var pointsMinusWhenWrongLabel: UILabel!
     @IBOutlet weak var pointsPenaltyWhenMoreTimeLabel: UILabel!
@@ -25,10 +17,6 @@ class QuizHomeViewController: CodeAcademyViewController {
 
     @IBAction func logoutButtonPressed(_ sender: Any) {
         dismiss(animated: true)
-    }
-
-    @IBAction func addQuestionsPressed(_ sender: Any) {
-        proceedToAddQuestionView()
     }
 
     @IBAction func leaderboardButtonPressed(_ sender: Any) {
@@ -47,7 +35,6 @@ class QuizHomeViewController: CodeAcademyViewController {
     private func configureView() {
         if let loggedInAccount = AccountManager.loggedInAccount {
             welcomeLabel.text = "Welcome to the quiz, " + loggedInAccount.username
-            addQuestionsButton.isHidden = loggedInAccount.accountType == .user
         }
     }
     
