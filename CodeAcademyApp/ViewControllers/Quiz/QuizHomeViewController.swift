@@ -20,6 +20,10 @@ class QuizHomeViewController: CodeAcademyViewController {
     }
 
     @IBAction func leaderboardButtonPressed(_ sender: Any) {
+        guard !LeaderboardManager.scoreRows.isEmpty else {
+            callLeaderboardIsEmptyAlert()
+            return
+        }
         proceedToLeaderboardView()
     }
 
@@ -30,6 +34,20 @@ class QuizHomeViewController: CodeAcademyViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         loadPointsRulesLabels()
+    }
+    
+    private func callLeaderboardIsEmptyAlert() {
+        // create the alert
+        let alert = UIAlertController(
+            title: "The Leaderboard is currently empty !!!",
+            message: "Just go ahead and complete one Quiz at least",
+            preferredStyle: UIAlertController.Style.alert)
+
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
     }
 
     private func configureView() {

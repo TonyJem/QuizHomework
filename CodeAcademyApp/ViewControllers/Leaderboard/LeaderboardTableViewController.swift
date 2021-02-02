@@ -1,10 +1,3 @@
-//
-//  LeaderboardTableViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Kristijonas Plukas on 2021-01-21.
-//
-
 import UIKit
 
 struct ScoreRow {
