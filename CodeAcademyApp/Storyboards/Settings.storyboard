@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EET-Yd-0F1">
-                                <rect key="frame" x="20" y="133.66666666666666" width="374" height="387.33333333333337"/>
+                                <rect key="frame" x="20" y="133.66666666666666" width="374" height="462.33333333333337"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-EE-fxt">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="87.333333333333329"/>
@@ -195,10 +195,21 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-s6-DbR">
+                                        <rect key="frame" x="0.0" y="412.33333333333337" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <state key="normal" title="Add questions">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addQuestionsPressed:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="WXz-gt-AaU"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="dG0-gF-iWL" firstAttribute="height" secondItem="NZH-vh-PaA" secondAttribute="height" id="8vB-24-wYn"/>
                                     <constraint firstItem="dG0-gF-iWL" firstAttribute="height" secondItem="rcD-BG-rgv" secondAttribute="height" id="EYk-Kj-L1h"/>
+                                    <constraint firstItem="pVd-s6-DbR" firstAttribute="height" secondItem="NZH-vh-PaA" secondAttribute="height" id="pJe-Kt-ABZ"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-FH-DCx">
@@ -212,31 +223,15 @@
                                     <action selector="saveButtonTapped:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="i7n-NW-aSS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVd-s6-DbR">
-                                <rect key="frame" x="20" y="571" width="374" height="50"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7aj-nk-MVC"/>
-                                </constraints>
-                                <state key="normal" title="Add questions">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="addQuestionsPressed:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="WXz-gt-AaU"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z5c-KU-DXq"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="Z5c-KU-DXq" firstAttribute="trailing" secondItem="WZi-GP-YBU" secondAttribute="trailing" constant="20" id="13d-Vh-Tto"/>
-                            <constraint firstItem="pVd-s6-DbR" firstAttribute="leading" secondItem="Z5c-KU-DXq" secondAttribute="leading" constant="20" id="4VN-hw-eyn"/>
                             <constraint firstItem="Z5c-KU-DXq" firstAttribute="trailing" secondItem="EET-Yd-0F1" secondAttribute="trailing" constant="20" id="D0f-Gb-yBM"/>
                             <constraint firstItem="EET-Yd-0F1" firstAttribute="top" secondItem="WZi-GP-YBU" secondAttribute="bottom" constant="50" id="LD8-Zi-jOC"/>
                             <constraint firstItem="EET-Yd-0F1" firstAttribute="leading" secondItem="Z5c-KU-DXq" secondAttribute="leading" constant="20" id="T6E-1d-0x8"/>
-                            <constraint firstItem="pVd-s6-DbR" firstAttribute="top" secondItem="EET-Yd-0F1" secondAttribute="bottom" constant="50" id="VyY-ud-FeZ"/>
                             <constraint firstItem="WZi-GP-YBU" firstAttribute="top" secondItem="Z5c-KU-DXq" secondAttribute="top" constant="50" id="iBw-F9-Kha"/>
-                            <constraint firstItem="Z5c-KU-DXq" firstAttribute="trailing" secondItem="pVd-s6-DbR" secondAttribute="trailing" constant="20" id="j9U-7r-eKz"/>
                             <constraint firstItem="WZi-GP-YBU" firstAttribute="leading" secondItem="Z5c-KU-DXq" secondAttribute="leading" constant="20" id="vKk-XH-hi2"/>
                         </constraints>
                     </view>
