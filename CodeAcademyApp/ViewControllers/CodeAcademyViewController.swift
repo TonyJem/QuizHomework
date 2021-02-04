@@ -1,10 +1,3 @@
-//
-//  CodeAcademyViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2021-01-10.
-//
-
 import UIKit
 
 class CodeAcademyViewController: UIViewController {

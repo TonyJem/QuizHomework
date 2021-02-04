@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EET-Yd-0F1">
-                                <rect key="frame" x="20" y="133.66666666666666" width="374" height="462.33333333333337"/>
+                                <rect key="frame" x="20" y="133.66666666666669" width="374" height="537.33333333333326"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GTr-EE-fxt">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="87.333333333333329"/>
@@ -202,19 +202,29 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="addQuestionsPressed:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="WXz-gt-AaU"/>
+                                            <action selector="addQuestionsTapped:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="WXz-gt-AaU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8PH-Cz-aRx">
+                                        <rect key="frame" x="0.0" y="487.33333333333337" width="374" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Delete All Questions">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteAllQuestionsTapped:" destination="gIP-iH-Ttu" eventType="touchUpInside" id="trF-c7-mHe"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="dG0-gF-iWL" firstAttribute="height" secondItem="NZH-vh-PaA" secondAttribute="height" id="8vB-24-wYn"/>
                                     <constraint firstItem="dG0-gF-iWL" firstAttribute="height" secondItem="rcD-BG-rgv" secondAttribute="height" id="EYk-Kj-L1h"/>
+                                    <constraint firstItem="8PH-Cz-aRx" firstAttribute="height" secondItem="pVd-s6-DbR" secondAttribute="height" id="VLG-uR-X4S"/>
                                     <constraint firstItem="pVd-s6-DbR" firstAttribute="height" secondItem="NZH-vh-PaA" secondAttribute="height" id="pJe-Kt-ABZ"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-FH-DCx">
-                                <rect key="frame" x="21" y="691" width="374" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXo-FH-DCx">
+                                <rect key="frame" x="20" y="738" width="374" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,17 +238,22 @@
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
                         <constraints>
                             <constraint firstItem="Z5c-KU-DXq" firstAttribute="trailing" secondItem="WZi-GP-YBU" secondAttribute="trailing" constant="20" id="13d-Vh-Tto"/>
+                            <constraint firstItem="XXo-FH-DCx" firstAttribute="leading" secondItem="EET-Yd-0F1" secondAttribute="leading" id="1Ch-PQ-SoU"/>
                             <constraint firstItem="Z5c-KU-DXq" firstAttribute="trailing" secondItem="EET-Yd-0F1" secondAttribute="trailing" constant="20" id="D0f-Gb-yBM"/>
                             <constraint firstItem="EET-Yd-0F1" firstAttribute="top" secondItem="WZi-GP-YBU" secondAttribute="bottom" constant="50" id="LD8-Zi-jOC"/>
+                            <constraint firstItem="XXo-FH-DCx" firstAttribute="height" secondItem="8PH-Cz-aRx" secondAttribute="height" id="OXG-Sj-bHT"/>
                             <constraint firstItem="EET-Yd-0F1" firstAttribute="leading" secondItem="Z5c-KU-DXq" secondAttribute="leading" constant="20" id="T6E-1d-0x8"/>
                             <constraint firstItem="WZi-GP-YBU" firstAttribute="top" secondItem="Z5c-KU-DXq" secondAttribute="top" constant="50" id="iBw-F9-Kha"/>
                             <constraint firstItem="WZi-GP-YBU" firstAttribute="leading" secondItem="Z5c-KU-DXq" secondAttribute="leading" constant="20" id="vKk-XH-hi2"/>
+                            <constraint firstItem="XXo-FH-DCx" firstAttribute="trailing" secondItem="EET-Yd-0F1" secondAttribute="trailing" id="zHk-Fc-d35"/>
+                            <constraint firstItem="Z5c-KU-DXq" firstAttribute="bottom" secondItem="XXo-FH-DCx" secondAttribute="bottom" constant="20" id="zm3-dG-zMJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gHT-VA-AnA"/>
                     <connections>
                         <outlet property="addQuestionsButton" destination="pVd-s6-DbR" id="Bei-Xj-X6f"/>
                         <outlet property="correctAnswerPointsTextField" destination="dG0-gF-iWL" id="IDb-cj-rZK"/>
+                        <outlet property="deleteAllQuestions" destination="8PH-Cz-aRx" id="zhb-9l-Xkv"/>
                         <outlet property="maxQuestionsLabel" destination="yIi-X0-ZQt" id="srk-ri-r7k"/>
                         <outlet property="maxQuestionsStepper" destination="J7R-qK-fNJ" id="XeS-8D-vgp"/>
                         <outlet property="minQuestionsLabel" destination="WlV-MM-uj3" id="Y1C-5p-4N9"/>
@@ -450,6 +465,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -1,10 +1,3 @@
-//
-//  UserDefaultManager.swift
-//  CodeAcademyApp
-//
-//  Created by Vilius Bundulas on 2021-01-12.
-//
-
 import Foundation
 
 struct UserDefaultsManager {
@@ -32,6 +25,11 @@ struct UserDefaultsManager {
         }
         savedQuestions.append(question)
         questions = savedQuestions
+    }
+    
+    static func deleteAllQuestions() {
+        guard questions != nil else { return }
+        questions?.removeAll()
     }
     
     static func saveAccount(_ account: inout Account) {

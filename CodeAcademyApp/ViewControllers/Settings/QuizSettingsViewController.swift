@@ -14,6 +14,7 @@ final class QuizSettingsViewController: CodeAcademyViewController {
     @IBOutlet weak var wrongAnswerPoints: ClearableTextField!
     @IBOutlet weak var penaltyPointsTextField: ClearableTextField!
     @IBOutlet weak var addQuestionsButton: UIButton!
+    @IBOutlet private weak var deleteAllQuestions: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,8 +35,12 @@ final class QuizSettingsViewController: CodeAcademyViewController {
         timerSettingsLabel.text = "\(Int(sender.value))"
     }
     
-    @IBAction func addQuestionsPressed(_ sender: UIButton) {
+    @IBAction func addQuestionsTapped(_ sender: UIButton) {
         proceedToAddQuestionView()
+    }
+    
+    @IBAction func deleteAllQuestionsTapped(_ sender: UIButton) {
+        callDeleteAllQuestionAlert()
     }
     
     @IBAction func saveButtonTapped(_ sender: Any) {
@@ -59,8 +64,26 @@ extension QuizSettingsViewController {
         timerSlider.value = timerSlider.minimumValue
         
         if let loggedInAccount = AccountManager.loggedInAccount {
-            addQuestionsButton.isHidden = loggedInAccount.accountType == .user
+            let adminIsConnected = loggedInAccount.accountType == .admin
+            addQuestionsButton.isHidden = !adminIsConnected
+            deleteAllQuestions.isHidden = !adminIsConnected
         }
     }
     
+    private func callDeleteAllQuestionAlert() {
+        // create the alert
+        let alert = UIAlertController(
+            title: "All questions are about to delete !!!",
+            message: "Are you sure you want to delete them all?",
+            preferredStyle: UIAlertController.Style.alert)
+
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Delete", style: UIAlertAction.Style.default, handler: {_ in
+            UserDefaultsManager.deleteAllQuestions()
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
 }
