@@ -32,6 +32,11 @@ struct UserDefaultsManager {
         questions?.removeAll()
     }
     
+    static func deleteAllNotAdminUsers() {
+        guard accounts != nil else { return }
+        accounts?.removeAll(where: {$0.accountType == .user})
+    }
+    
     static func saveAccount(_ account: inout Account) {
         var savedAccounts = [Account]()
         
