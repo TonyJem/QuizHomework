@@ -1,10 +1,3 @@
-//
-//  AlertView.swift
-//  CodeAcademyApp
-//
-//  Created by Petras Janulevicius on 26/1/21.
-//
-
 import UIKit
 
 typealias AlertDismissCompletion = (AlertView, UIButton) -> Void

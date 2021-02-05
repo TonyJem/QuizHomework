@@ -1,10 +1,3 @@
-//
-//  PointsRulesViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-28.
-//
-
 import UIKit
 
 class PointsRulesViewController: CodeAcademyViewController {

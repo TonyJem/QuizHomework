@@ -1,10 +1,3 @@
-//
-//  AccoutManager.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-12.
-//
-
 struct AccountManager {
 
     enum AccountManagerError: Error {

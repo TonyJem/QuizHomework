@@ -1,10 +1,3 @@
-//
-//  QuizTimer.swift
-//  CodeAcademyApp
-//
-//  Created by Lukas Adomavicius on 1/8/21.
-//
-
 import Foundation
 
 protocol QuizTimerDelegate: AnyObject {

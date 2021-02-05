@@ -1,10 +1,3 @@
-//
-//  Account.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-12.
-//
-
 enum AccountType: Int, Codable {
     case admin
     case user

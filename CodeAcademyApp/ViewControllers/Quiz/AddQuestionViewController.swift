@@ -1,10 +1,3 @@
-//
-//  AddQuestionViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2021-01-05.
-//
-
 import UIKit
 
 class AddQuestionViewController: UIViewController {
