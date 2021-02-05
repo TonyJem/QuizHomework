@@ -24,11 +24,12 @@ final class QuizSettingsViewController: CodeAcademyViewController {
     
     
     @IBAction func minQuestionsStepperValueChanged(_ sender: UIStepper) {
-        minQuestionsLabel.text = "Min q: \(sender.value)"
+        minQuestionsLabel.text = "Min q: \(Int(sender.value))"
+        SystemDefaults.minimalQuestionQuantity = Int(sender.value)
     }
     
     @IBAction func maxQuestionsStepperValueChanged(_ sender: UIStepper) {
-        maxQuestionsLabel.text = "Max q: \(sender.value)"
+        maxQuestionsLabel.text = "Max q: \(Int(sender.value))"
     }
     
     @IBAction func timmerSettingSliderValueChanged(_ sender: UISlider) {
@@ -52,7 +53,12 @@ final class QuizSettingsViewController: CodeAcademyViewController {
 
 extension QuizSettingsViewController {
     
+    private func setLabels() {
+        minQuestionsLabel.text = "Min q: \(SystemDefaults.minimalQuestionQuantity)"
+    }
+    
     func configureView() {
+        setLabels()
         minQuestionsStepper.minimumValue = 1
         minQuestionsStepper.maximumValue = 10
         minQuestionsStepper.stepValue = 1

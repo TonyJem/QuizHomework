@@ -1,10 +1,3 @@
-//
-//  QuestionViewController.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-28.
-//
-
 import UIKit
 
 class QuestionViewController: CodeAcademyViewController {
@@ -149,5 +142,3 @@ extension QuestionViewController: AlertViewDelegate {
         
     }
 }
-
-

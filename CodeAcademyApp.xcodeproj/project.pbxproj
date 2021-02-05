@@ -34,6 +34,7 @@
 		32D8D14825BF35730046261C /* QuizSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D8D14725BF35730046261C /* QuizSettingsViewController.swift */; };
 		32F6DE9B25ABA85A00919E36 /* CodeAcademyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */; };
 		32F6DE9F25ABA94200919E36 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9E25ABA94200919E36 /* String+Utilities.swift */; };
+		3A57AA6725CDFFE900A1036A /* SystemDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */; };
 		3DE2B40A25B6116400ED0C55 /* PointsRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */; };
 		806BAD5A25B9FBEF00342B27 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */; };
 		80AD599325B5ED75009FE339 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD599225B5ED75009FE339 /* Points.swift */; };
@@ -73,6 +74,7 @@
 		32D8D14725BF35730046261C /* QuizSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSettingsViewController.swift; sourceTree = "<group>"; };
 		32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAcademyViewController.swift; sourceTree = "<group>"; };
 		32F6DE9E25ABA94200919E36 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
+		3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDefaults.swift; sourceTree = "<group>"; };
 		3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsRulesViewController.swift; sourceTree = "<group>"; };
 		806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
 		80AD599225B5ED75009FE339 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3270916E25AE176A006E4E89 /* SwiftKeychain.swift */,
+				3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				321A124925854AA9002869DC /* AccoutManager.swift in Sources */,
 				80AD599625B5EFAB009FE339 /* QuizState.swift in Sources */,
 				32B1BCA5259D31EB002CF4CA /* Question.swift in Sources */,
+				3A57AA6725CDFFE900A1036A /* SystemDefaults.swift in Sources */,
 				257F978525AE18D700B3C5DD /* UserDefaultsManager.swift in Sources */,
 				324D333925C8A84B00B60CB4 /* AlertView.swift in Sources */,
 				327336A0259A4049009A222B /* QuestionViewController.swift in Sources */,
