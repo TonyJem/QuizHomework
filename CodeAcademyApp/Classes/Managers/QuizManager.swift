@@ -1,10 +1,3 @@
-//
-//  QuizManager.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2020-12-31.
-//
-
 struct QuizManager {
     
     static var quizState = QuizState()

@@ -118,6 +118,7 @@ private extension QuestionViewController {
     
     func startQuiz() {
         quizTimer.start()
+        UserDefaultsManager.shuffleQuestions()
         guard let firstQuestion = QuizManager.firstQuizQuestion else {
             return
         }

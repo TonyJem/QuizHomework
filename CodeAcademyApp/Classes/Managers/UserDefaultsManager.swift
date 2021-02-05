@@ -116,6 +116,11 @@ extension UserDefaultsManager {
         keyChain.set(password, forKey: username)
     }
     
+    static func shuffleQuestions() {
+        let shuffledQuestions = questions?.shuffled()
+        questions = shuffledQuestions
+    }
+    
     static func getPassword(username: String) -> String? {
         keyChain.get(username)
     }
