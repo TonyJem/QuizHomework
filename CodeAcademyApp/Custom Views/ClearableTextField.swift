@@ -1,10 +1,3 @@
-//
-//  ClearableTextField.swift
-//  CodeAcademyApp
-//
-//  Created by Arnas Sleivys on 2021-02-01.
-//
-
 import UIKit
 
 typealias VoidCompletion = () -> Void
