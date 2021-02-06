@@ -26,6 +26,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
+                                    <action selector="loginButtonTApped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fdb-B0-uBT"/>
                                     <segue destination="5dS-Ao-Ycn" kind="show" id="eQD-9v-WSk"/>
                                 </connections>
                             </button>

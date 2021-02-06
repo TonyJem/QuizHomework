@@ -14,6 +14,7 @@ class LoginViewController: CodeAcademyViewController {
     @IBAction func loginButtonTapped(_ sender: Any) {
         do {
             try AccountManager.login(username: usernameTextField.text, password: passwordTextField.text)
+            
             proceedToQuizView()
         } catch {
             if let error = error as? AccountManager.AccountManagerError {

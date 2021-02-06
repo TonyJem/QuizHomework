@@ -20,7 +20,11 @@ struct AccountManager {
         }
     }
 
-    static var loggedInAccount: Account?
+    static var loggedInAccount: Account? {
+        didSet {
+            registerCurrentUser()
+        }
+    }
 }
 
 // MARK: - Main functionality
@@ -69,6 +73,14 @@ private extension AccountManager {
         return accounts.contains { account -> Bool in
             account.username == username
         }
+    }
+    
+    static func registerCurrentUser() {
+        guard loggedInAccount != nil else { return }
+        var currentUser = loggedInAccount
+        currentUser?.password = ""
+        UserDefaultsManager.currentUser = currentUser
+        print("🟢 Current User registered to UserDefaultsManager: \(String(describing: currentUser?.username))")
     }
 }
 

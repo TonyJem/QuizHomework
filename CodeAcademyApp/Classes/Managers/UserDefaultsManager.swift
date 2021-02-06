@@ -7,6 +7,7 @@ struct UserDefaultsManager {
         static let accounts = "Accounts"
         static let pointsRules = "PointsRules"
         static let gameSaves = "GameSaves"
+        static let currentUser = "CurrentUser"
     }
     
     private static var userDefaults: UserDefaults {
@@ -109,6 +110,18 @@ extension UserDefaultsManager {
         } set {
             let gameSaves = try? JSONEncoder().encode(newValue)
             userDefaults.set(gameSaves, forKey: UserDefaultsManagerKey.gameSaves)
+        }
+    }
+    
+    static var currentUser: Account? {
+        get {
+            guard let currentUser = userDefaults.object(forKey: UserDefaultsManagerKey.currentUser) as? Data else {
+                return nil
+            }
+            return try? JSONDecoder().decode(Account.self, from: currentUser)
+        } set {
+            let currentUser = try? JSONEncoder().encode(newValue)
+            userDefaults.set(currentUser, forKey: UserDefaultsManagerKey.currentUser)
         }
     }
     
