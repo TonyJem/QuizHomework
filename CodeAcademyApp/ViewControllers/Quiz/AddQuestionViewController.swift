@@ -1,13 +1,13 @@
 import UIKit
 
 class AddQuestionViewController: UIViewController {
-
-    @IBOutlet weak var questionDescriptionTextField: UITextField!
-    @IBOutlet weak var firstAnswerTextField: UITextField!
-    @IBOutlet weak var secondAnswerTextField: UITextField!
-    @IBOutlet weak var thirdAnswerTextField: UITextField!
-    @IBOutlet weak var fourthAnswerTextField: UITextField!
-    @IBOutlet weak var correctAnswerTextField: UITextField!
+    
+    @IBOutlet private weak var questionDescriptionTextField: ClearableTextField!
+    @IBOutlet private weak var firstAnswerTextField: ClearableTextField!
+    @IBOutlet private weak var secondAnswerTextField: ClearableTextField!
+    @IBOutlet private weak var thirdAnswerTextField: ClearableTextField!
+    @IBOutlet private weak var fourthAnswerTextField: ClearableTextField!
+    @IBOutlet private weak var correctAnswerTextField: ClearableTextField!
 
     @IBAction func submitButtonTapped(_ sender: Any) {
         addQuestionToDatabase()
