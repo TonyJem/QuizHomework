@@ -2,9 +2,9 @@ import UIKit
 
 class RegisterViewController: CodeAcademyViewController {
 
-    @IBOutlet private weak var usernameTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-
+    @IBOutlet private weak var usernameTextField: ClearableTextField!
+    @IBOutlet private weak var passwordTextField: ClearableTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTextField.delegate = self

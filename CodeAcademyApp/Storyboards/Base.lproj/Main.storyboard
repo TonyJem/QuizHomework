@@ -191,8 +191,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="hn2-1A-t8r"/>
                     <connections>
-                        <outlet property="passwordTextField" destination="M8z-sy-Jfs" id="siI-ul-Z7U"/>
-                        <outlet property="usernameTextField" destination="fqr-5q-4kH" id="1Tx-dT-SDs"/>
+                        <outlet property="passwordTextField" destination="M8z-sy-Jfs" id="n7U-2t-ZJt"/>
+                        <outlet property="usernameTextField" destination="fqr-5q-4kH" id="9rm-5Q-2bP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcz-aV-0ci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
