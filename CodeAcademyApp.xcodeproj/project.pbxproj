@@ -14,7 +14,6 @@
 		321A125525855819002869DC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321A125425855819002869DC /* LoginViewController.swift */; };
 		324D333825C8A84B00B60CB4 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 324D333625C8A84B00B60CB4 /* AlertView.xib */; };
 		324D333925C8A84B00B60CB4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324D333725C8A84B00B60CB4 /* AlertView.swift */; };
-		325C221925C8658B007ECD83 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325C221825C8658B007ECD83 /* ClearableTextField.swift */; };
 		3267170225A4BF6700B15F86 /* AddQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3267170125A4BF6700B15F86 /* AddQuestionViewController.swift */; };
 		3270916F25AE176A006E4E89 /* SwiftKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3270916E25AE176A006E4E89 /* SwiftKeychain.swift */; };
 		327336A0259A4049009A222B /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273369F259A4049009A222B /* QuestionViewController.swift */; };
@@ -35,7 +34,7 @@
 		32F6DE9B25ABA85A00919E36 /* CodeAcademyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */; };
 		32F6DE9F25ABA94200919E36 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9E25ABA94200919E36 /* String+Utilities.swift */; };
 		3A57AA6725CDFFE900A1036A /* SystemDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */; };
-		3ADC7A9325D0075B001F4B39 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC7A9225D0075B001F4B39 /* test.swift */; };
+		3ADC7A9325D0075B001F4B39 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC7A9225D0075B001F4B39 /* ClearableTextField.swift */; };
 		3DE2B40A25B6116400ED0C55 /* PointsRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */; };
 		806BAD5A25B9FBEF00342B27 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */; };
 		80AD599325B5ED75009FE339 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD599225B5ED75009FE339 /* Points.swift */; };
@@ -53,7 +52,6 @@
 		321A125425855819002869DC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		324D333625C8A84B00B60CB4 /* AlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AlertView.xib; path = "CodeAcademyApp/Custom Views/AlertView.xib"; sourceTree = SOURCE_ROOT; };
 		324D333725C8A84B00B60CB4 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlertView.swift; path = "CodeAcademyApp/Custom Views/AlertView.swift"; sourceTree = SOURCE_ROOT; };
-		325C221825C8658B007ECD83 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearableTextField.swift; sourceTree = "<group>"; };
 		3267170125A4BF6700B15F86 /* AddQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionViewController.swift; sourceTree = "<group>"; };
 		3270916E25AE176A006E4E89 /* SwiftKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftKeychain.swift; sourceTree = "<group>"; };
 		3273369F259A4049009A222B /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +74,7 @@
 		32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAcademyViewController.swift; sourceTree = "<group>"; };
 		32F6DE9E25ABA94200919E36 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 		3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDefaults.swift; sourceTree = "<group>"; };
-		3ADC7A9225D0075B001F4B39 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = test.swift; path = "CodeAcademyApp/Custom Views/test.swift"; sourceTree = SOURCE_ROOT; };
+		3ADC7A9225D0075B001F4B39 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClearableTextField.swift; path = "CodeAcademyApp/Custom Views/ClearableTextField.swift"; sourceTree = SOURCE_ROOT; };
 		3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsRulesViewController.swift; sourceTree = "<group>"; };
 		806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
 		80AD599225B5ED75009FE339 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
@@ -134,8 +132,7 @@
 			children = (
 				324D333725C8A84B00B60CB4 /* AlertView.swift */,
 				324D333625C8A84B00B60CB4 /* AlertView.xib */,
-				325C221825C8658B007ECD83 /* ClearableTextField.swift */,
-				3ADC7A9225D0075B001F4B39 /* test.swift */,
+				3ADC7A9225D0075B001F4B39 /* ClearableTextField.swift */,
 			);
 			path = "Custom views";
 			sourceTree = "<group>";
@@ -330,7 +327,6 @@
 				3277A060259A2EED001C7AA8 /* QuizHomeViewController.swift in Sources */,
 				D89A8C0C25B9E6C1003600A6 /* LeaderboardTableViewController.swift in Sources */,
 				328BFDEC258509D300DFD3CC /* ViewController.swift in Sources */,
-				325C221925C8658B007ECD83 /* ClearableTextField.swift in Sources */,
 				3267170225A4BF6700B15F86 /* AddQuestionViewController.swift in Sources */,
 				C97A854C25AE04C60018A5A1 /* QuizTimer.swift in Sources */,
 				32B1BCA2259D31C1002CF4CA /* QuizManager.swift in Sources */,
@@ -339,7 +335,7 @@
 				321A124625851F99002869DC /* Account.swift in Sources */,
 				3270916F25AE176A006E4E89 /* SwiftKeychain.swift in Sources */,
 				806BAD5A25B9FBEF00342B27 /* LeaderboardManager.swift in Sources */,
-				3ADC7A9325D0075B001F4B39 /* test.swift in Sources */,
+				3ADC7A9325D0075B001F4B39 /* ClearableTextField.swift in Sources */,
 				32F6DE9B25ABA85A00919E36 /* CodeAcademyViewController.swift in Sources */,
 				321A125525855819002869DC /* LoginViewController.swift in Sources */,
 				328BFDE8258509D300DFD3CC /* AppDelegate.swift in Sources */,
