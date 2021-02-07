@@ -62,13 +62,6 @@ extension ClearableTextField {
     
 }
 
-
-
-
-
-
-
-
 extension ClearableTextField: UITextFieldDelegate {
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
