@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -44,7 +44,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="C1E-gW-CkD">
                                 <rect key="frame" x="20" y="394" width="374" height="260"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-Cp-7la">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N9-Cp-7la" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
@@ -57,7 +57,7 @@
                                             <action selector="leaderboardButtonPressed:" destination="nGW-AO-V5f" eventType="touchUpInside" id="vSB-NW-Kwh"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-eB-3ui">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bv-eB-3ui" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
@@ -70,7 +70,7 @@
                                             <action selector="beginButtonPressed:" destination="nGW-AO-V5f" eventType="touchUpInside" id="wTj-Y9-ekS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-Ij-I8Y">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJx-Ij-I8Y" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <constraints>
@@ -83,7 +83,7 @@
                                             <action selector="settingsButtonPressed" destination="nGW-AO-V5f" eventType="touchUpInside" id="6fE-De-feR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-Ut-jit">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XX0-Ut-jit" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="210" width="374" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
@@ -141,7 +141,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-lg-K3z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1En-lg-K3z" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                 <rect key="frame" x="50" y="428" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
@@ -154,7 +154,7 @@
                                     <action selector="choiceButtonTapped:" destination="Exo-nW-2Yb" eventType="touchUpInside" id="06o-BH-zxD"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-I3-usi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-I3-usi" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                 <rect key="frame" x="50" y="498" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
@@ -167,7 +167,7 @@
                                     <action selector="choiceButtonTapped:" destination="Exo-nW-2Yb" eventType="touchUpInside" id="Af2-1a-t2n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5m-Vu-8bX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5m-Vu-8bX" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                 <rect key="frame" x="50" y="568" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
@@ -180,7 +180,7 @@
                                     <action selector="choiceButtonTapped:" destination="Exo-nW-2Yb" eventType="touchUpInside" id="ug1-2Q-00d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6B-xC-eAl">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6B-xC-eAl" customClass="QuizButton" customModule="CodeAcademyApp" customModuleProvider="target">
                                 <rect key="frame" x="50" y="638" width="314" height="50"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
