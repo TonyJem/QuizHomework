@@ -34,6 +34,7 @@
 		32F6DE9B25ABA85A00919E36 /* CodeAcademyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */; };
 		32F6DE9F25ABA94200919E36 /* String+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F6DE9E25ABA94200919E36 /* String+Utilities.swift */; };
 		3A57AA6725CDFFE900A1036A /* SystemDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */; };
+		3ADC7AA425D06A9E001F4B39 /* ClearableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADC7AA325D06A9E001F4B39 /* ClearableTextField.swift */; };
 		3DE2B40A25B6116400ED0C55 /* PointsRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */; };
 		806BAD5A25B9FBEF00342B27 /* LeaderboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */; };
 		80AD599325B5ED75009FE339 /* Points.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AD599225B5ED75009FE339 /* Points.swift */; };
@@ -73,6 +74,7 @@
 		32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeAcademyViewController.swift; sourceTree = "<group>"; };
 		32F6DE9E25ABA94200919E36 /* String+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utilities.swift"; sourceTree = "<group>"; };
 		3A57AA6625CDFFE900A1036A /* SystemDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemDefaults.swift; sourceTree = "<group>"; };
+		3ADC7AA325D06A9E001F4B39 /* ClearableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClearableTextField.swift; path = "CodeAcademyApp/Custom Views/ClearableTextField.swift"; sourceTree = SOURCE_ROOT; };
 		3DE2B40925B6116400ED0C55 /* PointsRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsRulesViewController.swift; sourceTree = "<group>"; };
 		806BAD5925B9FBEF00342B27 /* LeaderboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardManager.swift; sourceTree = "<group>"; };
 		80AD599225B5ED75009FE339 /* Points.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Points.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			children = (
 				324D333725C8A84B00B60CB4 /* AlertView.swift */,
 				324D333625C8A84B00B60CB4 /* AlertView.xib */,
+				3ADC7AA325D06A9E001F4B39 /* ClearableTextField.swift */,
 			);
 			path = "Custom views";
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				32F6DE9F25ABA94200919E36 /* String+Utilities.swift in Sources */,
 				32D8D14825BF35730046261C /* QuizSettingsViewController.swift in Sources */,
 				32D8D14525BF353E0046261C /* UserSettingsViewController.swift in Sources */,
+				3ADC7AA425D06A9E001F4B39 /* ClearableTextField.swift in Sources */,
 				80AD599325B5ED75009FE339 /* Points.swift in Sources */,
 				328BFDEA258509D300DFD3CC /* SceneDelegate.swift in Sources */,
 				321A124925854AA9002869DC /* AccoutManager.swift in Sources */,
