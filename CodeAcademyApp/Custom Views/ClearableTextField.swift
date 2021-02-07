@@ -35,7 +35,6 @@ final class ClearableTextField: UITextField {
 }
 
 // MARK: - Helpers
-
 extension ClearableTextField {
 
     private func configureView() {
