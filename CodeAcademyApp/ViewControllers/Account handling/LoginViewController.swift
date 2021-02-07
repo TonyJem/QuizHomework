@@ -29,6 +29,6 @@ class LoginViewController: CodeAcademyViewController {
 extension LoginViewController: ClearableTextFieldDelegate {
 
     func didTapClearIcon(_ icon: UIImageView) {
-        print("I was tapped!")
+        print("🟢 I was tapped in LoginViewController!")
     }
 }
