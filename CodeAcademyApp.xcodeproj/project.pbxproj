@@ -107,11 +107,11 @@
 		321A124F258553E3002869DC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */,
 				32D8D13F25BF31590046261C /* Settings */,
 				D89A8C0925B9E684003600A6 /* Leaderboard */,
 				32F6DEA825ABADCE00919E36 /* Quiz */,
 				32F6DEA725ABADB700919E36 /* Account handling */,
-				32F6DE9A25ABA85A00919E36 /* CodeAcademyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
