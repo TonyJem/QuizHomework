@@ -59,4 +59,20 @@ extension ClearableTextField {
         let insets = UIEdgeInsets(top: .zero, left: TextInset, bottom: .zero, right: .zero)
         return bounds.inset(by: insets)
     }
+    
+}
+
+
+
+
+
+
+
+
+extension ClearableTextField: UITextFieldDelegate {
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        print("🟢 TextFieldShouldBeginEditing in taped cell")
+        return true
+    }
 }
