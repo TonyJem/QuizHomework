@@ -3,8 +3,8 @@ import UIKit
 final class UserSettingsViewController: UIViewController {
 
     @IBOutlet private weak var usernameLabel: UILabel!
-    @IBOutlet private weak var usernameTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var usernameTextField: ClearableTextField!
+    @IBOutlet private weak var passwordTextField: ClearableTextField!
     @IBOutlet private weak var deleteUsersButton: UIButton!
 
     override func viewDidLoad() {
