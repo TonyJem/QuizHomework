@@ -12,6 +12,12 @@ class ClearableTextField: UITextField {
 
     weak var clearableTextFieldDelegate: ClearableTextFieldDelegate?
     var onDidTap: VoidCompletion?
+    
+    private var clearIconViewIsHidden = true {
+        didSet {
+            clearIconView.isHidden = clearIconViewIsHidden
+        }
+    }
 
     private lazy var clearIconView: UIImageView = {
         let clearIcon =  #imageLiteral(resourceName: "clear-icon").withTintColor(.placeholderText)
@@ -37,6 +43,7 @@ class ClearableTextField: UITextField {
 extension ClearableTextField {
 
     private func configureView() {
+        delegate = self
         rightViewMode = .whileEditing
         rightView = clearIconView
         backgroundColor = .white
@@ -46,6 +53,7 @@ extension ClearableTextField {
         text = nil
         clearableTextFieldDelegate?.didTapClearIcon(clearIconView)
         onDidTap?()
+        textFieldDidBeginEditing(self)
     }
 
     override func textRect(forBounds bounds: CGRect) -> CGRect {
@@ -58,4 +66,18 @@ extension ClearableTextField {
         return bounds.inset(by: insets)
     }
     
+}
+
+extension ClearableTextField: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {        
+        guard let currentText = text else {
+            clearIconViewIsHidden = true
+            return }
+        clearIconViewIsHidden = currentText.isEmpty
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        clearIconViewIsHidden = string.isEmpty
+        return true
+    }
 }
