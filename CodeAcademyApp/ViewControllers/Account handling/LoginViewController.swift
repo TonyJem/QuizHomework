@@ -10,6 +10,13 @@ class LoginViewController: CodeAcademyViewController {
         usernameTextField.clearableTextFieldDelegate = self
         passwordTextField.clearableTextFieldDelegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        usernameTextField.text = nil
+        passwordTextField.text = nil
+    }
 
     @IBAction func loginButtonTapped(_ sender: Any) {
         do {

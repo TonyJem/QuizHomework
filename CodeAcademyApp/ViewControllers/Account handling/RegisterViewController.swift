@@ -10,6 +10,13 @@ class RegisterViewController: CodeAcademyViewController {
         usernameTextField.delegate = self
         passwordTextField.delegate = self
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        usernameTextField.text = nil
+        passwordTextField.text = nil
+    }
 
     @IBAction func registerButtonPressed(_ sender: Any) {
         do {

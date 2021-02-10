@@ -2,22 +2,11 @@ import UIKit
 
 class ViewController: CodeAcademyViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         
-        print("🟢 VC loaded")
-        
-        guard let curentUser = UserDefaultsManager.currentUser else {
-            print("🟢 VC loaded")
-            return
-        }
-        
-        print("🟢🟢🟢 curentUser in VC didDetected: \(curentUser)")
+        guard UserDefaultsManager.currentUser != nil else { return }
         proceedToQuizView()
-    }
-    
-    @IBAction func loginButtonTApped(_ sender: UIButton) {
-        
     }
     
 }

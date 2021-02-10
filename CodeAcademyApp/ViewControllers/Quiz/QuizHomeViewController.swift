@@ -16,6 +16,7 @@ class QuizHomeViewController: CodeAcademyViewController {
     }
 
     @IBAction func logoutButtonPressed(_ sender: Any) {
+        UserDefaultsManager.currentUser = nil
         dismiss(animated: true)
     }
 
@@ -51,8 +52,8 @@ class QuizHomeViewController: CodeAcademyViewController {
     }
 
     private func configureView() {
-        if let loggedInAccount = AccountManager.loggedInAccount {
-            welcomeLabel.text = "Welcome to the quiz, " + loggedInAccount.username
+        if let curentUser = UserDefaultsManager.currentUser {
+            welcomeLabel.text = "Welcome to the quiz, " + curentUser.username
         }
     }
     
