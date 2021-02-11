@@ -14,6 +14,22 @@ final class UserSettingsViewController: UIViewController {
     }
     
     @IBAction private func saveButtonTapped() {
+        
+        if usernameTextField.text != "" && passwordTextField.text != "" {
+            print("🟢 All fields are NOT emtpy")
+        }
+        
+        if usernameTextField.text != "" && passwordTextField.text == "" {
+            callSaveNewUserNameAlert(for: usernameTextField.text!)
+        }
+        
+        if usernameTextField.text == "" && passwordTextField.text != "" {
+            print("🔴 usernameTextField is emtpy")
+        }
+        
+        if usernameTextField.text == "" && passwordTextField.text == "" {
+            print("🟣 All fields are emtpy")
+        }
     }
     
     @IBAction private func deleteUsersButtonTapped(_ sender: UIButton) {
@@ -21,10 +37,14 @@ final class UserSettingsViewController: UIViewController {
     }
     
     private func configureView() {
-        if let loggedInAccount = AccountManager.loggedInAccount {
-            let adminIsConnected = loggedInAccount.accountType == .admin
-            deleteUsersButton.isHidden = !adminIsConnected
-        }
+        guard let loggedInAccount = AccountManager.loggedInAccount else { return }
+        
+        usernameLabel.text = loggedInAccount.username
+        usernameTextField.text = loggedInAccount.username
+        
+        let adminIsConnected = loggedInAccount.accountType == .admin
+        deleteUsersButton.isHidden = !adminIsConnected
+
     }
 
     private func callDeleteAllUsersAlert() {
@@ -32,12 +52,28 @@ final class UserSettingsViewController: UIViewController {
             title: "All not admin Users are about to delete !!!",
             message: "Are you sure you want to delete them all?",
             preferredStyle: UIAlertController.Style.alert)
-
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
         alert.addAction(UIAlertAction(title: "Delete All", style: UIAlertAction.Style.default, handler: {_ in
             UserDefaultsManager.deleteAllNotAdminUsers()
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
-
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func callSaveNewUserNameAlert(for name: String) {
+        let alert = UIAlertController(
+            title: "User name set to \(name) !!!",
+            message: "Do you confirm that name ?",
+            preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: {_ in
+            self.dismissSettingView()
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func dismissSettingView() {
+        dismiss(animated: true, completion: nil)
     }
 }
