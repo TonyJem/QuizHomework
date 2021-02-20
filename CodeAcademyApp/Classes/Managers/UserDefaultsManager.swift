@@ -38,6 +38,11 @@ struct UserDefaultsManager {
         accounts?.removeAll(where: {$0.accountType == .user})
     }
     
+    static func deleteAccount(_ account: Account) {
+        guard accounts != nil else { return }
+        accounts?.removeAll(where: {$0.username == account.username})
+    }
+    
     static func saveAccount(_ account: inout Account) {
         var savedAccounts = [Account]()
         

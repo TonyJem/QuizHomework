@@ -62,18 +62,50 @@ final class UserSettingsViewController: UIViewController {
     
     private func callSaveNewUserNameAlert(for name: String) {
         let alert = UIAlertController(
-            title: "User name set to \(name) !!!",
+            title: "User name is about to set to new : \(name) !!!",
             message: "Do you confirm that name ?",
             preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: nil))
         alert.addAction(UIAlertAction(title: "Confirm", style: UIAlertAction.Style.default, handler: {_ in
-            self.dismissSettingView()
+            var isNameReserved = false
+            if let accounts = UserDefaultsManager.accounts {
+                for account in accounts {
+                    if account.username == name { isNameReserved = true }
+                }
+            }
+            
+            if isNameReserved {
+                self.callAccountAlreadyExistsAlert()
+            } else {
+                self.setNewUserName(to: name)
+                self.dismissSettingView()
+            }
         }))
         self.present(alert, animated: true, completion: nil)
     }
     
+    private func setNewUserName(to newName: String) {
+        guard let currentUser = AccountManager.loggedInAccount,
+              let oldPassword = UserDefaultsManager.getPassword(username: currentUser.username) else { return }
+        
+        var newAccount = Account(username: newName, password: oldPassword)
+        UserDefaultsManager.saveAccount(&newAccount)
+        AccountManager.loggedInAccount = newAccount
+        UserDefaultsManager.deleteAccount(currentUser)
+    }
+    
     private func dismissSettingView() {
         dismiss(animated: true, completion: nil)
+    }
+    
+    private func callAccountAlreadyExistsAlert() {
+        let alert = UIAlertController(
+            title: "This name is already reserved !!!",
+            message: "Account with such name already exists, please choose another UserName",
+            preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
