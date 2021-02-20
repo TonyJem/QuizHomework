@@ -5,7 +5,8 @@ class ViewController: CodeAcademyViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         
-        guard UserDefaultsManager.currentUser != nil else { return }
+        guard let currentUser = UserDefaultsManager.currentUser else { return }
+        AccountManager.loggedInAccount = currentUser
         proceedToQuizView()
     }
     

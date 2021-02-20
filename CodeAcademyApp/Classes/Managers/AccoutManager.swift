@@ -77,10 +77,7 @@ private extension AccountManager {
     
     static func registerCurrentUser() {
         guard loggedInAccount != nil else { return }
-        var currentUser = loggedInAccount
-        currentUser?.password = ""
-        UserDefaultsManager.currentUser = currentUser
-        print("🟢 Current User registered to UserDefaultsManager: \(String(describing: currentUser?.username))")
+        UserDefaultsManager.currentUser = loggedInAccount
     }
 }
 

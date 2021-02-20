@@ -52,7 +52,7 @@ class QuizHomeViewController: CodeAcademyViewController {
     }
 
     private func configureView() {
-        if let curentUser = UserDefaultsManager.currentUser {
+        if let curentUser = AccountManager.loggedInAccount {
             welcomeLabel.text = "Welcome to the quiz, " + curentUser.username
         }
     }
